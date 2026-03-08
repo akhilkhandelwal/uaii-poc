@@ -1,0 +1,4 @@
+FROM python:3.9-slim
+RUN pip install prometheus_client
+COPY uaii_simulator.py /uaii_simulator.py
+CMD["python", "-u", "/uaii_simulator.py"]
